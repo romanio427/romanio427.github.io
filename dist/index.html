@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark">
+    <meta name="theme-color" content="#080a10">
+    <meta name="application-name" content="Send Me Crypto">
+    <title>Send Me Crypto</title>
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="apple-touch-icon" href="assets/logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <main class="coin-screen">
+      <h1 class="visually-hidden">Select a cryptocurrency</h1>
+      <a class="profile-card" href="https://github.com/romanio427" target="_blank" rel="me noopener noreferrer" aria-label="Open romanio427 on GitHub">
+        <img class="profile-avatar" src="https://github.com/romanio427.png?size=160" alt="GitHub avatar for romanio427" width="80" height="80" fetchpriority="high" referrerpolicy="no-referrer">
+        <div class="profile-copy">
+          <strong>romanio427</strong>
+          <span>Independent developer</span>
+        </div>
+      </a>
+      <nav class="coin-grid" aria-label="Cryptocurrencies">
+        <a class="coin-button" href="#btc"><img src="assets/icons/btc.png" alt=""><span>BTC</span></a>
+        <a class="coin-button" href="#eth"><img src="assets/icons/eth.png" alt=""><span>ETH</span></a>
+        <a class="coin-button" href="#usdt"><img src="assets/icons/usdt.png" alt=""><span>USDT</span></a>
+        <a class="coin-button" href="#usdc"><img src="assets/icons/usdc.png" alt=""><span>USDC</span></a>
+        <a class="coin-button" href="#bnb"><img src="assets/icons/bnb.png" alt=""><span>BNB</span></a>
+        <a class="coin-button" href="#sol"><img src="assets/icons/solana.png" alt=""><span>SOL</span></a>
+        <a class="coin-button" href="#xrp"><img src="assets/icons/xrp.png" alt=""><span>XRP</span></a>
+        <a class="coin-button" href="#trx"><img src="assets/icons/tron.png" alt=""><span>TRX</span></a>
+        <a class="coin-button" href="#ton"><img src="assets/icons/ton.png" alt=""><span>TON</span></a>
+        <a class="coin-button" href="#doge"><img src="assets/icons/doge.png" alt=""><span>DOGE</span></a>
+        <a class="coin-button" href="#ltc"><img src="assets/icons/ltc.png" alt=""><span>LTC</span></a>
+        <a class="coin-button" href="#xmr"><img src="assets/icons/xmr.png" alt=""><span>XMR</span></a>
+      </nav>
+    </main>
+
+    <section class="modal" id="btc" aria-label="BTC">
+      <a class="backdrop" href="#" aria-label="Close"></a><div class="panel">
+        <div class="panel-head"><img src="assets/icons/btc.png" alt=""><strong>BTC</strong><a href="#" aria-label="Close">✕</a></div>
+        <div class="networks"><span class="network active"><img src="assets/icons/btc.png" alt=""><span>Bitcoin<small>BTC</small></span></span></div>
+        <figure class="qr-pane active"><img src="assets/qr/network-bitcoin.png" alt="Bitcoin network QR code for BTC"><figcaption><button class="copy-address" type="button" data-address="bc1qyel23u0t96p5gpmd866h0h436k3llsv648v525" aria-label="Copy Bitcoin address">bc1qyel23u0t96p5gpmd866h0h436k3llsv648v525</button></figcaption></figure>
+      </div>
+    </section>
+
+    <section class="modal" id="eth" aria-label="ETH">
+      <a class="backdrop" href="#" aria-label="Close"></a><div class="panel">
+        <div class="panel-head"><img src="assets/icons/eth.png" alt=""><strong>ETH</strong><a href="#" aria-label="Close">✕</a></div>
+        <div class="network-tabs">
+          <input type="radio" name="eth-network" id="eth-ethereum" checked><label class="network" for="eth-ethereum"><img src="assets/icons/eth.png" alt=""><span>Ethereum<small>ERC20</small></span></label>
+          <input type="radio" name="eth-network" id="eth-arbitrum"><label class="network" for="eth-arbitrum"><img src="assets/icons/arbitrum.png" alt=""><span>Arbitrum<small>One</small></span></label>
+          <input type="radio" name="eth-network" id="eth-base"><label class="network" for="eth-base"><img src="assets/icons/base.png" alt=""><span>Base<small>Base</small></span></label>
+        </div>
+        <div class="qr-stack">
+          <figure class="qr-pane qr-eth-ethereum active"><img src="assets/qr/network-ethereum.png" alt="Ethereum network QR code for ETH"><figcaption><button class="copy-address" type="button" data-address="0x4f1c28E9fbA082a009815dD04461679EC277fEf9" aria-label="Copy Ethereum address">0x4f1c28E9fbA082a009815dD04461679EC277fEf9</button></figcaption></figure>
+          <figure class="qr-pane qr-eth-arbitrum"><img src="assets/qr/network-arbitrum.png" alt="Arbitrum network QR code for ETH"><figcaption><button class="copy-address" type="button" data-address="0x4f1c28E9fbA082a009815dD04461679EC277fEf9" aria-label="Copy Arbitrum address">0x4f1c28E9fbA082a009815dD04461679EC277fEf9</button></figcaption></figure>
+          <figure class="qr-pane qr-eth-base"><img src="assets/qr/network-base.png" alt="Base network QR code for ETH"><figcaption><button class="copy-address" type="button" data-address="0x4f1c28E9fbA082a009815dD04461679EC277fEf9" aria-label="Copy Base address">0x4f1c28E9fbA082a009815dD04461679EC277fEf9</button></figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="modal" id="usdt" aria-label="USDT">
+      <a class="backdrop" href="#" aria-label="Close"></a><div class="panel">
+        <div class="panel-head"><img src="assets/icons/usdt.png" alt=""><strong>USDT</strong><a href="#" aria-label="Close">✕</a></div>
+        <div class="network-tabs">
+          <input type="radio" name="usdt-network" id="usdt-tron" checked><label class="network" for="usdt-tron"><img src="assets/icons/tron.png" alt=""><span>TRON<small>TRC20</small></span></label>
+          <input type="radio" name="usdt-network" id="usdt-ethereum"><label class="network" for="usdt-ethereum"><img src="assets/icons/eth.png" alt=""><span>Ethereum<small>ERC20</small></span></label>
+          <input type="radio" name="usdt-network" id="usdt-bnb"><label class="network" for="usdt-bnb"><img src="assets/icons/bnb.png" alt=""><span>BNB Chain<small>BEP20</small></span></label>
+          <input type="radio" name="usdt-network" id="usdt-solana"><label class="network" for="usdt-solana"><img src="assets/icons/solana.png" alt=""><span>Solana<small>SPL</small></span></label>
+          <input type="radio" name="usdt-network" id="usdt-polygon"><label class="network" for="usdt-polygon"><img src="assets/icons/polygon.png" alt=""><span>Polygon<small>PoS</small></span></label>
+        </div>
+        <div class="qr-stack">
+          <figure class="qr-pane qr-usdt-tron active"><img src="assets/qr/network-tron.png" alt="TRON network QR code for USDT"><figcaption><button class="copy-address" type="button" data-address="TLLYkPNtxhww67pjDb7Y1YoDa197NsUSu1" aria-label="Copy USDT TRON address">TLLYkPNtxhww67pjDb7Y1YoDa197NsUSu1</button></figcaption></figure>
+          <figure class="qr-pane qr-usdt-ethereum"><img src="assets/qr/network-ethereum.png" alt="Ethereum network QR code for USDT"><figcaption><button class="copy-address" type="button" data-address="0x4f1c28E9fbA082a009815dD04461679EC277fEf9" aria-label="Copy USDT Ethereum address">0x4f1c28E9fbA082a009815dD04461679EC277fEf9</button></figcaption></figure>
+          <figure class="qr-pane qr-usdt-bnb"><img src="assets/qr/network-bnb-chain.png" alt="BNB Chain network QR code for USDT"><figcaption><button class="copy-address" type="button" data-address="0x4f1c28E9fbA082a009815dD04461679EC277fEf9" aria-label="Copy USDT BNB Chain address">0x4f1c28E9fbA082a009815dD04461679EC277fEf9</button></figcaption></figure>
+          <figure class="qr-pane qr-usdt-solana"><img src="assets/qr/network-solana.png" alt="Solana network QR code for USDT"><figcaption><button class="copy-address" type="button" data-address="CKYpg6xWGQm4DCKeJhFwBshj5P6e8TYB95P5kLf7weZq" aria-label="Copy USDT Solana address">CKYpg6xWGQm4DCKeJhFwBshj5P6e8TYB95P5kLf7weZq</button></figcaption></figure>
+          <figure class="qr-pane qr-usdt-polygon"><img src="assets/qr/network-polygon.png" alt="Polygon network QR code for USDT"><figcaption><button class="copy-address" type="button" data-address="0x4f1c28E9fbA082a009815dD04461679EC277fEf9" aria-label="Copy USDT Polygon address">0x4f1c28E9fbA082a009815dD04461679EC277fEf9</button></figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="modal" id="bnb" aria-label="BNB">
+      <a class="backdrop" href="#" aria-label="Close"></a><div class="panel">
+        <div class="panel-head"><img src="assets/icons/bnb.png" alt=""><strong>BNB</strong><a href="#" aria-label="Close">✕</a></div>
+        <div class="networks"><span class="network active"><img src="assets/icons/bnb.png" alt=""><span>BNB Chain<small>BEP20</small></span></span></div>
+        <figure class="qr-pane active"><img src="assets/qr/network-bnb-chain.png" alt="BNB Chain network QR code for BNB"><figcaption><button class="copy-address" type="button" data-address="0x4f1c28E9fbA082a009815dD04461679EC277fEf9" aria-label="Copy BNB Chain address">0x4f1c28E9fbA082a009815dD04461679EC277fEf9</button></figcaption></figure>
+      </div>
+    </section>
+
+    <section class="modal" id="xrp" aria-label="XRP">
+      <a class="backdrop" href="#" aria-label="Close"></a><div class="panel">
+        <div class="panel-head"><img src="assets/icons/xrp.png" alt=""><strong>XRP</strong><a href="#" aria-label="Close">✕</a></div>
+        <div class="networks"><span class="network active"><img src="assets/icons/xrp.png" alt=""><span>XRP Ledger<small>XRPL</small></span></span></div>
+        <figure class="qr-pane active"><img src="assets/qr/network-xrp-ledger.png" alt="XRP Ledger network QR code for XRP"><figcaption><button class="copy-address" type="button" data-address="rhFpmdKyHAz5keRfXvMvGKohfb9g7gZfT9" aria-label="Copy XRP Ledger address">rhFpmdKyHAz5keRfXvMvGKohfb9g7gZfT9</button></figcaption></figure>
+      </div>
+    </section>
+
+    <section class="modal" id="usdc" aria-label="USDC">
+      <a class="backdrop" href="#" aria-label="Close"></a><div class="panel">
+        <div class="panel-head"><img src="assets/icons/usdc.png" alt=""><strong>USDC</strong><a href="#" aria-label="Close">✕</a></div>
+        <div class="network-tabs">
+          <input type="radio" name="usdc-network" id="usdc-ethereum" checked><label class="network" for="usdc-ethereum"><img src="assets/icons/eth.png" alt=""><span>Ethereum<small>ERC20</small></span></label>
+          <input type="radio" name="usdc-network" id="usdc-solana"><label class="network" for="usdc-solana"><img src="assets/icons/solana.png" alt=""><span>Solana<small>SPL</small></span></label>
+          <input type="radio" name="usdc-network" id="usdc-base"><label class="network" for="usdc-base"><img src="assets/icons/base.png" alt=""><span>Base<small>Base</small></span></label>
+          <input type="radio" name="usdc-network" id="usdc-arbitrum"><label class="network" for="usdc-arbitrum"><img src="assets/icons/arbitrum.png" alt=""><span>Arbitrum<small>One</small></span></label>
+          <input type="radio" name="usdc-network" id="usdc-polygon"><label class="network" for="usdc-polygon"><img src="assets/icons/polygon.png" alt=""><span>Polygon<small>PoS</small></span></label>
+        </div>
+        <div class="qr-stack">
+          <figure class="qr-pane qr-usdc-ethereum active"><img src="assets/qr/network-ethereum.png" alt="Ethereum network QR code for USDC"><figcaption><button class="copy-address" type="button" data-address="0x4f1c28E9fbA082a009815dD04461679EC277fEf9" aria-label="Copy USDC Ethereum address">0x4f1c28E9fbA082a009815dD04461679EC277fEf9</button></figcaption></figure>
+          <figure class="qr-pane qr-usdc-solana"><img src="assets/qr/network-solana.png" alt="Solana network QR code for USDC"><figcaption><button class="copy-address" type="button" data-address="CKYpg6xWGQm4DCKeJhFwBshj5P6e8TYB95P5kLf7weZq" aria-label="Copy USDC Solana address">CKYpg6xWGQm4DCKeJhFwBshj5P6e8TYB95P5kLf7weZq</button></figcaption></figure>
+          <figure class="qr-pane qr-usdc-base"><img src="assets/qr/network-base.png" alt="Base network QR code for USDC"><figcaption><button class="copy-address" type="button" data-address="0x4f1c28E9fbA082a009815dD04461679EC277fEf9" aria-label="Copy USDC Base address">0x4f1c28E9fbA082a009815dD04461679EC277fEf9</button></figcaption></figure>
+          <figure class="qr-pane qr-usdc-arbitrum"><img src="assets/qr/network-arbitrum.png" alt="Arbitrum network QR code for USDC"><figcaption><button class="copy-address" type="button" data-address="0x4f1c28E9fbA082a009815dD04461679EC277fEf9" aria-label="Copy USDC Arbitrum address">0x4f1c28E9fbA082a009815dD04461679EC277fEf9</button></figcaption></figure>
+          <figure class="qr-pane qr-usdc-polygon"><img src="assets/qr/network-polygon.png" alt="Polygon network QR code for USDC"><figcaption><button class="copy-address" type="button" data-address="0x4f1c28E9fbA082a009815dD04461679EC277fEf9" aria-label="Copy USDC Polygon address">0x4f1c28E9fbA082a009815dD04461679EC277fEf9</button></figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="modal" id="sol" aria-label="SOL">
+      <a class="backdrop" href="#" aria-label="Close"></a><div class="panel">
+        <div class="panel-head"><img src="assets/icons/solana.png" alt=""><strong>SOL</strong><a href="#" aria-label="Close">✕</a></div>
+        <div class="networks"><span class="network active"><img src="assets/icons/solana.png" alt=""><span>Solana<small>SOL</small></span></span></div>
+        <figure class="qr-pane active"><img src="assets/qr/network-solana.png" alt="Solana network QR code for SOL"><figcaption><button class="copy-address" type="button" data-address="CKYpg6xWGQm4DCKeJhFwBshj5P6e8TYB95P5kLf7weZq" aria-label="Copy Solana address">CKYpg6xWGQm4DCKeJhFwBshj5P6e8TYB95P5kLf7weZq</button></figcaption></figure>
+      </div>
+    </section>
+
+    <section class="modal" id="trx" aria-label="TRX">
+      <a class="backdrop" href="#" aria-label="Close"></a><div class="panel">
+        <div class="panel-head"><img src="assets/icons/tron.png" alt=""><strong>TRX</strong><a href="#" aria-label="Close">✕</a></div>
+        <div class="networks"><span class="network active"><img src="assets/icons/tron.png" alt=""><span>TRON<small>TRC20</small></span></span></div>
+        <figure class="qr-pane active"><img src="assets/qr/network-tron.png" alt="TRON network QR code for TRX"><figcaption><button class="copy-address" type="button" data-address="TLLYkPNtxhww67pjDb7Y1YoDa197NsUSu1" aria-label="Copy TRON address">TLLYkPNtxhww67pjDb7Y1YoDa197NsUSu1</button></figcaption></figure>
+      </div>
+    </section>
+
+    <section class="modal" id="doge" aria-label="DOGE">
+      <a class="backdrop" href="#" aria-label="Close"></a><div class="panel">
+        <div class="panel-head"><img src="assets/icons/doge.png" alt=""><strong>DOGE</strong><a href="#" aria-label="Close">✕</a></div>
+        <div class="networks"><span class="network active"><img src="assets/icons/doge.png" alt=""><span>Dogecoin<small>DOGE</small></span></span></div>
+        <figure class="qr-pane active"><img src="assets/qr/network-dogecoin.png" alt="Dogecoin network QR code for DOGE"><figcaption><button class="copy-address" type="button" data-address="DDCNB8vjZ4o28KmBShCyHCfZNnVDpBQvB5" aria-label="Copy Dogecoin address">DDCNB8vjZ4o28KmBShCyHCfZNnVDpBQvB5</button></figcaption></figure>
+      </div>
+    </section>
+
+    <section class="modal" id="xmr" aria-label="XMR">
+      <a class="backdrop" href="#" aria-label="Close"></a><div class="panel">
+        <div class="panel-head"><img src="assets/icons/xmr.png" alt=""><strong>XMR</strong><a href="#" aria-label="Close">✕</a></div>
+        <div class="networks"><span class="network active"><img src="assets/icons/xmr.png" alt=""><span>Monero<small>XMR</small></span></span></div>
+        <figure class="qr-pane active"><img src="assets/qr/network-monero.png" alt="Monero network QR code for XMR"><figcaption><button class="copy-address" type="button" data-address="4AjCwcUwQNGKUJiKTEoSQxRkDnFZZf8kyAZS8vC5Qwc29oLgcCHTxJTY8wdHiH9iUCPXwGwDm8bbkXnLhxHQP9c4VBT71yq" aria-label="Copy Monero address">4AjCwcUwQNGKUJiKTEoSQxRkDnFZZf8kyAZS8vC5Qwc29oLgcCHTxJTY8wdHiH9iUCPXwGwDm8bbkXnLhxHQP9c4VBT71yq</button></figcaption></figure>
+      </div>
+    </section>
+
+    <section class="modal" id="ltc" aria-label="LTC">
+      <a class="backdrop" href="#" aria-label="Close"></a><div class="panel">
+        <div class="panel-head"><img src="assets/icons/ltc.png" alt=""><strong>LTC</strong><a href="#" aria-label="Close">✕</a></div>
+        <div class="networks"><span class="network active"><img src="assets/icons/ltc.png" alt=""><span>Litecoin<small>LTC</small></span></span></div>
+        <figure class="qr-pane active"><img src="assets/qr/network-litecoin.png" alt="Litecoin network QR code for LTC"><figcaption><button class="copy-address" type="button" data-address="ltc1qrw8zs42kjs3llqc33j6s5cdqj9mk5qu66y8f5f" aria-label="Copy Litecoin address">ltc1qrw8zs42kjs3llqc33j6s5cdqj9mk5qu66y8f5f</button></figcaption></figure>
+      </div>
+    </section>
+
+    <section class="modal" id="ton" aria-label="TON">
+      <a class="backdrop" href="#" aria-label="Close"></a><div class="panel">
+        <div class="panel-head"><img src="assets/icons/ton.png" alt=""><strong>TON</strong><a href="#" aria-label="Close">✕</a></div>
+        <div class="networks"><span class="network active"><img src="assets/icons/ton.png" alt=""><span>TON<small>Toncoin</small></span></span></div>
+        <figure class="qr-pane active"><img src="assets/qr/network-ton.png" alt="TON network QR code"><figcaption><button class="copy-address" type="button" data-address="UQDXCykFLuLFKGQABifha5hX9XnW-vhuU0vB8fPesCv9oC9l" aria-label="Copy TON address">UQDXCykFLuLFKGQABifha5hX9XnW-vhuU0vB8fPesCv9oC9l</button></figcaption></figure>
+      </div>
+    </section>
+  </body>
+</html>

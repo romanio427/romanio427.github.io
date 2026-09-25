@@ -1,0 +1,16 @@
+# Dependencies and runtimes
+.sites-runtime/
+.playwright-cli/
+.openai/
+__pycache__/
+*.pyc
+
+# Local tooling and project notes
+tools/
+requirements.txt
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
